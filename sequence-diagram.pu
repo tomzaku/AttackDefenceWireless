@@ -1,0 +1,14 @@
+
+@startuml
+:Chuẩn bị 2 card Wireless;
+fork
+ :Giả Lập(Rogue) AP\nCard1;
+ :Victim đã đăng nhập;
+ :Lấy thông tin cần thiết;
+fork again
+ :Không kết nối(Deauthentication) máy trạm\nCard2;
+ stop
+endfork
+:Tắt AP giả;
+stop
+@enduml
